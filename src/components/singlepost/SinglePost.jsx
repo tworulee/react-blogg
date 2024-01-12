@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./singlepost.css"
 
 export default function SinglePost() {
@@ -19,7 +20,11 @@ export default function SinglePost() {
         <div className="singlePostInfo">
           <span>
             Author:
-            <b className="singlePostAuthor">Safak</b>
+            <b className="singlePostAuthor">
+            <Link className="link" to="/posts?username=Safak">
+                Safak
+              </Link>
+            </b>
           </span>
           <span>1 day ago</span>
         </div>
